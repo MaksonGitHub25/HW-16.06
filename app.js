@@ -48,20 +48,25 @@ function foundArithmeticMean() {
     }
     console.log(numArr);
     calculation(numArr);
-}
 
-function calculation(Arr) {
-    //forEach
-    //сложить елементы массива
-    //поделить на Arr.lenght
+    function calculation() {
+        let sumAllArrayElem = 0;
+        
+        const numArrLen = numArr.length;
+
+        numArr.forEach(function (elem) {
+            sumAllArrayElem += numArr[elem];
+        });
     
-    console.log(Arr.length);
+        // for (let i = 0; i < numArrLen; i++) {
+        //     sumAllArrayElem += numArr[i];
+        // };
+        
+        const arithmeticMean = sumAllArrayElem/numArrLen;
+        console.log(`${arithmeticMean} is arithmetic mean of ur num's`);
+    }
 }
 
-// function foundArithmeticMean (a, b, c) {
-//     // console.log(`${} is ur wanted number`);
-//     console.log(`${(a+b+c)/arguments.length} is ur wanted number`);
-// }
 
 foundArithmeticMean();
 
@@ -70,4 +75,4 @@ foundArithmeticMean();
 // H/W
 //* 1) Написать функци которая принимает число и сокращает его в 2 раза.
 //* 2) Написать функцию которая принимает два параметра (а , б) ->  а сокращается на б раз , но только в случае того , что остаток от деления будет 0.
-// 3) Пользователь через prompt имеет возможность ввести три числа , эти три числа должны стать арг к функции которая находит среднее арифметическое
+//* 3) Пользователь через prompt имеет возможность ввести три числа , эти три числа должны стать арг к функции которая находит среднее арифметическое
