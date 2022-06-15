@@ -31,10 +31,6 @@ reduceTheNumberTask2(mainNumber, reduceNumber);
 console.log('Task 3');
 console.log('Числа будут запрашиватся, пока вы не нажмете отмена');
 
-// const firstUserNum = +prompt('Введи первое число');
-// const secondUserNum = +prompt('Введи второе число');
-// const therdUserNum = +prompt('Введи третье число');
-
 function foundArithmeticMean() {
     let numArr = [];
 
@@ -54,13 +50,13 @@ function foundArithmeticMean() {
         
         const numArrLen = numArr.length;
 
-        numArr.forEach(function (elem) {
-            sumAllArrayElem += numArr[elem];
-        });
+        // numArr.forEach(function (elem) {
+        //     sumAllArrayElem += numArr[elem];
+        // });
     
-        // for (let i = 0; i < numArrLen; i++) {
-        //     sumAllArrayElem += numArr[i];
-        // };
+        for (let i = 0; i < numArrLen; i++) {
+            sumAllArrayElem += numArr[i];
+        };
         
         const arithmeticMean = sumAllArrayElem/numArrLen;
         console.log(`${arithmeticMean} is arithmetic mean of ur num's`);
