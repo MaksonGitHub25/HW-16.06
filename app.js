@@ -1,74 +1,89 @@
-// Task 1
-console.log('Task 1');
+// // Task 1
+// console.log('Task 1');
 
-const userNumberTask1 = +prompt('Task 1: Введи число');
+// const userNumberTask1 = +prompt('Task 1: Введи число');
 
-function reduceTheNumber (number) {
-    console.log(`${number/2} is ur wanted number`);
-}
+// console.log(`Ur number: ${userNumberTask1}`);
 
-reduceTheNumber(userNumberTask1);
+// function reduceTheNumber (number) {
+//     console.log(`${number/2} is ur wanted number`);
+// }
 
-//task 2
+// reduceTheNumber(userNumberTask1);
 
-console.log('Task 2');
+// console.log('-----------------------------------------');
 
-const mainNumber = +prompt('Task 2: Введите число которое будем делить');
-const reduceNumber = +prompt('Task 2: Введите число на которое будем делить');
+// //task 2
 
-function reduceTheNumberTask2 (a, b) {
-    if (!a / b == 0) {
-        console.log(`${a / b} is ur wanted number`);
-    } else {
-        console.log("U introduced bad num's");
-    }
-}
+// console.log('Task 2');
 
-reduceTheNumberTask2(mainNumber, reduceNumber);
+// const mainNumber = +prompt('Task 2: Введите число которое будем делить');
+// console.log(`Ur main number: ${mainNumber}`);
+// const reduceNumber = +prompt('Task 2: Введите число на которое будем делить');
+// console.log(`Ur reduce number: ${reduceNumber}`);
 
-//task 3
 
-console.log('Task 3');
-console.log('Числа будут запрашиватся, пока вы не нажмете отмена');
+// function reduceTheNumberTask2 (a, b) {
+//     if (!a / b == 0) {
+//         console.log(`${a / b} is ur wanted number`);
+//     } else {
+//         console.log("U introduced bad num's");
+//     }
+// }
 
-function foundArithmeticMean() {
-    let numArr = [];
+// reduceTheNumberTask2(mainNumber, reduceNumber);
 
-    while (true) {
-        let userNum = +prompt('Task 3: Введите число');
-        console.log(typeof userNum);
-        if (userNum == 0) {
-            break;
-        }
-        numArr.push(userNum);
-    }
-    console.log(numArr);
-    calculation(numArr);
+// console.log('-----------------------------------------');
 
-    function calculation() {
-        let sumAllArrayElem = 0;
-        
-        const numArrLen = numArr.length;
+// //task 3
 
-        // numArr.forEach(function (elem) {
-        //     sumAllArrayElem += numArr[elem];
-        // });
+// console.log('Task 3');
+// console.log(`
+//     Числа будут запрашиватся, пока вы не нажмете отмена
+//     `);
+
+// function foundArithmeticMean() {
+//     let numArr = [];
+
+//     while (true) {
+//         let userNum = +prompt('Task 3: Введите число');
+//         if (userNum == 0) {
+//             break;
+//         }
+//         numArr.push(userNum);
+//     }
     
-        for (let i = 0; i < numArrLen; i++) {
-            sumAllArrayElem += numArr[i];
-        };
+//     const numArrLen = numArr.length;
+
+//     arrPrint();
+//     calculation(numArr);
+
+//     function calculation() {
+//         let sumAllArrayElem = 0;
         
-        const arithmeticMean = sumAllArrayElem/numArrLen;
-        console.log(`${arithmeticMean} is arithmetic mean of ur num's`);
-    }
-}
+
+//         // numArr.forEach(function (elem) {
+//         //     sumAllArrayElem += numArr[elem];
+//         // });
+    
+//         for (let i = 0; i < numArrLen; i++) {
+//             sumAllArrayElem += numArr[i];
+//         };
+        
+//         const arithmeticMean = sumAllArrayElem/numArrLen;
+//         console.log(`${arithmeticMean} is arithmetic mean of ur num's`);
+//     }
+
+//     function arrPrint() {
+//         console.log("Ur's numbers:");
+        
+//         for (let i = 0; i < numArrLen; i++) {
+//             console.log(`\t${numArr[i]}`);
+//         };
+//     }
+// }
 
 
-foundArithmeticMean();
+// foundArithmeticMean();
 
-
-
-// H/W
-//* 1) Написать функци которая принимает число и сокращает его в 2 раза.
-//* 2) Написать функцию которая принимает два параметра (а , б) ->  а сокращается на б раз , но только в случае того , что остаток от деления будет 0.
-//* 3) Пользователь через prompt имеет возможность ввести три числа , эти три числа должны стать арг к функции которая находит среднее арифметическое
+// console.log('-----------------------------------------');
