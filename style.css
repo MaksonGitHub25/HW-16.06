@@ -26,10 +26,34 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: white;
     border-radius: 1rem;
-    border: 2px solid red;
-    /* transition: box-sizing 400ms ease; */
+    border: 2px solid;
+
+    transition: 500ms ease;
 }
 
-/* .btn:hover {
-    box-sizing: 0 0 100px 100px red inset;
-} */
+#first {
+    border-color: red;
+    box-shadow: 0 0 0 0 red inset;
+}
+
+#first:hover {
+    box-shadow: 0 0 5px 50px red inset;
+}
+
+#second {
+    border-color: green;
+    box-shadow: 0 0 0 0 green inset;
+}
+
+#second:hover {
+    box-shadow: 0 0 5px 50px green inset;
+}
+
+#third {
+    border-color: blue;
+    box-shadow: 0 0 0 0 blue inset;
+}
+
+#third:hover {
+    box-shadow: 0 0 5px 50px blue inset;
+}
